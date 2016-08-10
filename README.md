@@ -7,6 +7,11 @@ MarkdownLib is a library which converts `rich text` within a `Text Suite` compat
 
 ### Installation
 
+Enter the following command in the Terminal application to install the lastest version of MarkdownLib on your machine:
+
+~~~~
+curl https://raw.githubusercontent.com/alldritt/AppleScriptLibraries/master/MarkdownLib.applescript | osacompile -o ~/Library/Script\ Libraries/MarkdownLib.scpt
+~~~~
 
 ### Usage
 
@@ -14,4 +19,6 @@ MarkdownLib provides a single public function: `richTextToMarkdown(rich text obj
 
 ~~~~
 use AppleScript version "2.4" -- Yosemite (10.10) or lateruse MarkdownLib : script "MarkdownLib" version "1.0"use scripting additionstell application "TextEdit"	MarkdownLib's richTextToMarkdown(a reference to document 1)end tell~~~~
-
+## The Future
+I hope to add additional libraries to this respository as time goes on.  If you want to improve my work, Pull Requests are always welcome.
+
