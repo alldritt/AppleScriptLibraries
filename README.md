@@ -3,7 +3,7 @@ Here is a collection of AppleScript libraries which I use regularly which others
 
 ## MarksLib
 
-MarksLib is a collection of handlers for everyday operations that I find myself using in almost every script I write.  There are tools for reading and writing text files, string substitution, splitting strings into arrays and converting arrays into strings and more.
+MarksLib is a collection of handlers for everyday operations that I find myself using in almost every script I write.  There are tools for reading and writing text files, string substitution, converting between strings and arrays and more.
 
 
 ### Installation
