@@ -8,7 +8,7 @@ MarksLib is a collection of handlers for everyday operations that I find myself 
 
 ### Installation
 
-Enter the following command in the `Terminal` application to install the latest version of MarkdownLib on your machine:
+Enter the following command in the `Terminal` application to install the latest version of MarksLib on your machine:
 
 ~~~~
 curl https://raw.githubusercontent.com/alldritt/AppleScriptLibraries/master/MarksLib.applescript | osacompile -o ~/Library/Script\ Libraries/MarksLib.scpt
