@@ -42,7 +42,7 @@ The `theData` parameter should be a string.
 
 #### replaceText
 
-The `replaceText(theString, fString, rString)` handler replaces all occurrences of `fString` in `theString` with `rString.
+The `replaceText(theString, fString, rString)` handler replaces all occurrences of `fString` in `theString` with `rString`.
 
 ~~~~
 use AppleScript version "2.4" -- Yosemite (10.10) or lateruse MarksLib : script "MarksLib" version "1.0"MarksLib's replaceText("the quick brown fox jumped over the lazy dog", "the", "xxx")
