@@ -18,6 +18,10 @@ curl https://raw.githubusercontent.com/alldritt/AppleScriptLibraries/master/Mark
 
 MarksLib provides the following handlers:
 
+#### containerOf
+
+The `containerOf(theReference)` handler returns the `container` of an object specifier.  For example, `containerOf(file 1 of folder 1 of application "Finder")` would return `file 1`'s container: `folder 1 of application "Finder"`.
+
 #### readFromFile
 
 The `readFromFile(theFile)` handler reads the contents of a text file.  The `theFile` parameter can take many forms:
