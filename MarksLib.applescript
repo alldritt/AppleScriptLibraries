@@ -11,11 +11,7 @@ use framework "Foundation"
 use scripting additions
 
 
-property cr : character id 13
-property lf : character id 10
-property vt : character id 11
 property pstrCharToTrim : {tab, linefeed, return, space, character id 160, character id 5760, character id 8192, character id 8193, character id 8194, character id 8195, character id 8196, character id 8197, character id 8198, character id 8199, character id 8200, character id 8201, character id 8202, character id 8239, character id 8287, character id 12288}
-
 
 
 on containerOf(theObject)
@@ -83,28 +79,6 @@ on trim(theString)
 		else
 			return text lLoc thru rLoc of theString
 		end if
-		
-		(*
-		set theString to replaceText(theString, vt, " ")
-		set theString to replaceText(theString, tab, " ")
-		considering white space
-			repeat while theString begins with " " or theString begins with cr or theString begins with lf
-				if length of theString > 1 then
-					set theString to text 2 thru -1 of theString
-				else
-					set theString to ""
-				end if
-			end repeat
-			repeat while theString ends with " " or theString ends with cr or theString ends with lf
-				if length of theString > 1 then
-					set theString to text 1 thru -2 of theString
-				else
-					set theString to ""
-				end if
-			end repeat
-		end considering
-		return theString
-	*)
 	else
 		return theString
 	end if
