@@ -191,3 +191,12 @@ on readFromFileAs(theFile, theClass)
 		return missing value
 	end try
 end readFromFileAs
+
+on doesFileExist(theFile)
+	try
+		makeFileReference(theFile) as alias
+		return true
+	on error
+		return false
+	end try
+end doesFileExist
