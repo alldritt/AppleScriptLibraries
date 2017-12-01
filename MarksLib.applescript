@@ -142,7 +142,9 @@ on makeFileReference(theFile)
 	else if class of theFile is string and character 1 of theFile is "~" then
 		set theFile to POSIX file ((POSIX path of (path to home folder)) & text 2 thru -1 of theFile)
 	else if class of theFile is string then
-		set theFile to alias theFile
+		try
+			set theFile to alias theFile
+		end try
 	end if
 	
 	return theFile
