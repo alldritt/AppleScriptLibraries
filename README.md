@@ -44,6 +44,16 @@ The `writeToFile(theFile, theData)` handler writes the contents of a variable to
 
 The `theData` parameter should be a string.
 
+#### doesFileExist
+
+The `doesFileExist(theFile)` handler tests to see if a file exists.  The `theFile` parameter can take many forms:
+
+- full HFS path (e.g. `readFromFile("Macintosh HD:Users:Mark:Desktop:file.txt")`)
+- full POSIX path (e.g. `readFromFile("/Users/Mark/Desktop/file.txt")`)
+- relative POSIX path (e.g. `readFromFile("~/Desktop/file.txt")`)
+- alias (e.g. `readFromFile(alias "Macintosh HD:Users:Mark:Desktop:file.txt")`)
+- file reference (e.g. `readFromFile(file "Macintosh HD:Users:Mark:Desktop:file.txt")`)
+
 #### replaceText
 
 The `replaceText(theString, fString, rString)` handler replaces all occurrences of `fString` in `theString` with `rString`.
