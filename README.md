@@ -137,7 +137,7 @@ MarksLib's formatCSVString("My name is \"Mark\"")
 
 ## MarkdownLib
 
-MarkdownLib is a library which converts `rich text` within a `Text Suite` compatible application (e.g. `TextEdit`, [OmniOutliner](https://www.omnigroup.com/omnioutliner) and others) into Markdown.  This is a fairly rudimentary conversion to Markdown, but it serves me needs.
+MarkdownLib is a library which converts `rich text` within a `Text Suite` compatible application (e.g. `TextEdit`, [OmniOutliner](https://www.omnigroup.com/omnioutliner) and others) into Markdown.  This is a fairly rudimentary conversion to Markdown, but it serves my needs.
 
 ### Installation
 
@@ -161,6 +161,7 @@ tell application "TextEdit"
 end tell
 ~~~~
 
+See also [this post on the Script Debugger support forum](http://forum.latenightsw.com/t/markdownlib-on-github/1013/2).
 
 ## The Future
 
