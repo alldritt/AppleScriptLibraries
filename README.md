@@ -161,7 +161,7 @@ tell application "TextEdit"
 end tell
 ~~~~
 
-See also [this post on the Script Debugger support forum](http://forum.latenightsw.com/t/markdownlib-on-github/1013/2).
+See also [this post](http://forum.latenightsw.com/t/export-omnioutliner-document-to-markdown/1049) and [this post](http://forum.latenightsw.com/t/markdownlib-on-github/1013) on the Script Debugger support forum.
 
 ## The Future
 
