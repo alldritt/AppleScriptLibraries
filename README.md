@@ -56,7 +56,8 @@ The `doesFileExist(theFile)` handler tests to see if a file exists.  The `theFil
 
 #### replaceText
 
-The `replaceText(theString, fString, rString)` handler replaces all occurrences of `fString` in `theString` with `rString`.
+The `replaceText(theString, fString, rString)` handler replaces all occurrences of `fString` in `theString` with `rString`.  If
+`theString` is a list of strings then all occurrences of `fString` are replaced in each string in the list.
 
 ~~~~
 use AppleScript version "2.4" -- Yosemite (10.10) or later
