@@ -34,7 +34,7 @@ The `readFromFile(theFile)` handler reads the contents of a text file.  The `the
 
 #### writeToFile
 
-The `writeToFile(theFile, theData)` handler writes the contents of a variable to a text file.  The `theFile` parameter can take many forms:
+The `writeToFile(theFile, theData)` handler writes the contents of a variable to a file encoded as UTF-8 text.  The `theFile` parameter can take many forms:
 
 - full HFS path (e.g. `readFromFile("Macintosh HD:Users:Mark:Desktop:file.txt")`)
 - full POSIX path (e.g. `readFromFile("/Users/Mark/Desktop/file.txt")`)
@@ -43,6 +43,18 @@ The `writeToFile(theFile, theData)` handler writes the contents of a variable to
 - file reference (e.g. `readFromFile(file "Macintosh HD:Users:Mark:Desktop:file.txt")`)
 
 The `theData` parameter should be a string.
+
+#### writeToDataFile
+
+The `writeToDataFile(theFile, theData)` handler writes the contents of a variable to a file as raw data.  The `theFile` parameter can take many forms:
+
+- full HFS path (e.g. `readFromFile("Macintosh HD:Users:Mark:Desktop:file.txt")`)
+- full POSIX path (e.g. `readFromFile("/Users/Mark/Desktop/file.txt")`)
+- relative POSIX path (e.g. `readFromFile("~/Desktop/file.txt")`)
+- alias (e.g. `readFromFile(alias "Macintosh HD:Users:Mark:Desktop:file.txt")`)
+- file reference (e.g. `readFromFile(file "Macintosh HD:Users:Mark:Desktop:file.txt")`)
+
+The `theData` parameter can be any type of data.
 
 #### doesFileExist
 
