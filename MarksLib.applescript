@@ -150,15 +150,15 @@ on makeFileReference(theFile)
 	return theFile
 end makeFileReference
 
-on writeToFile(theFile, theData)
-	--	Write theData to theFile (file ref or string path)
+on writeToFile(theFile, theString)
+	--	Write theString to theFile (file ref or string path)
 	try
 		local fileReference, fileSpec
 		
 		set theFile to makeFileReference(theFile)
 		set fileReference to open for access theFile with write permission
 		set eof fileReference to 0
-		write theData to fileReference as «class utf8»
+		write theString to fileReference as «class utf8»
 		close access fileReference
 		return theFile
 	on error errMessage number errNum
@@ -169,6 +169,27 @@ on writeToFile(theFile, theData)
 	end try
 	
 end writeToFile
+
+on writeDataToFile(theFile, theData)
+	--	Write theData to theFile (file ref or string path)
+	try
+		local fileReference, fileSpec
+		
+		set theFile to makeFileReference(theFile)
+		set fileReference to open for access theFile with write permission
+		set eof fileReference to 0
+		write theData to fileReference
+		close access fileReference
+		return theFile
+	on error errMessage number errNum
+		try
+			close access file theFile
+		end try
+		error errMessage number errNum
+	end try
+	
+end writeDataToFile
+
 
 on readFromFile(theFile)
 	return readFromFileAs(theFile, text)
