@@ -44,9 +44,9 @@ The `writeToFile(theFile, theData)` handler writes the contents of a variable to
 
 The `theData` parameter should be a string.
 
-#### writeToDataFile
+#### writeDataToFile
 
-The `writeToDataFile(theFile, theData)` handler writes the contents of a variable to a file as raw data.  The `theFile` parameter can take many forms:
+The `writeDataToFile(theFile, theData)` handler writes the contents of a variable to a file as raw data.  The `theFile` parameter can take many forms:
 
 - full HFS path (e.g. `readFromFile("Macintosh HD:Users:Mark:Desktop:file.txt")`)
 - full POSIX path (e.g. `readFromFile("/Users/Mark/Desktop/file.txt")`)
