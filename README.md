@@ -8,6 +8,9 @@ Here is a collection of AppleScript libraries which I use regularly which others
 
  - [MarkdownLib](MarkdownLib.md)
 
+ - [DiscourseLib](DiscourseLib.md)
+
+
 ## The Future
 
 I hope to add additional libraries to this repository as time goes on.  If you want to improve on my work, Pull Requests are always welcome.  Please direct questions to the [Late Night Software Support Forum](http://form.latenightsw.com).
