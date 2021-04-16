@@ -33,7 +33,7 @@ curl https://raw.githubusercontent.com/alldritt/AppleScriptLibraries/master/Disc
 
 ~~~
 --	Let the user pick a category into which the topic will go
-set categoryChoice to choose from list discourseLib's getDiscourseCatagories() ¬
+set categoryChoice to choose from list discourseLib's getDiscourseCategories() ¬
 	with prompt "Forum Category" OK button name "Post" without multiple selections allowed and empty selection allowed
 if categoryChoice = false then -- user cancelled?
 	return

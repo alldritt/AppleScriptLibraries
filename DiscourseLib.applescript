@@ -50,7 +50,7 @@ on getDiscourseTags()
 	return theNames
 end getDiscourseTags
 
-on getDiscourseCatagories()
+on getDiscourseCategories()
 	local theJSON, theNames -- so SD can see them
 	
 	--	Construct a URL containing all the query parameters needed to create a Dicourse post
@@ -70,7 +70,7 @@ on getDiscourseCatagories()
 	
 	set theNames to (theJSON's valueForKeyPath:"category_list.categories.name") as list
 	return theNames
-end getDiscourseCatagories
+end getDiscourseCategories
 
 on getDiscoursePost(postID)
 	local theJSON, endpoint
