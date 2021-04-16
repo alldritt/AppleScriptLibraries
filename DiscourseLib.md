@@ -22,6 +22,7 @@ curl https://raw.githubusercontent.com/alldritt/AppleScriptLibraries/master/Disc
 	~~~~
 	use AppleScript version "2.4" -- Yosemite (10.10) or later
 	use discourseLib : script "DiscourseLib" version "1.0"
+	use scripting additions
 	
 	--	Discourse properties
 	set discourseLib's APIDOMAIN to "https://forum.domain.com"
