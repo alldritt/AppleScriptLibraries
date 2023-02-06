@@ -1,7 +1,7 @@
 
 # DiscourseLib
 
-DiscourseLib Lib is a library that allows you to access [Discourse](https://www.discourse.org) servers from AppleScript.  You can post new topics, get the details of existing posts, query tags and categories.
+DiscourseLib Lib is a library that allows you to access [Discourse](https://www.discourse.org) servers from AppleScript.  You can post new topics, get the details of existing posts, query tags and categories.  
 
 ## Installation
 
@@ -59,4 +59,4 @@ set myTags to discourseLib's getDiscourseTags()
 
 ## Other uses
 
-This library provides a base for developing other REST API clients for AppleScript.  The basic principals are generally transferable.
+This library provides a base for developing other REST API clients for AppleScript.  The basic principals are generally transferable.  The library does not offer a complete implementation of the Discourse API - it was developed to satisfy our internal needs.

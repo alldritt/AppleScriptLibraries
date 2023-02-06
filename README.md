@@ -6,6 +6,8 @@ Here is a collection of AppleScript libraries which I use regularly which others
 
  - [MarksLib](MarksLib.md)
 
+ - [MastodonLib](MastodonLib.md)
+
  - [MarkdownLib](MarkdownLib.md)
 
  - [DiscourseLib](DiscourseLib.md)
