@@ -149,7 +149,7 @@ on postStatus(status, contentWarning, visibility)
 	if contentWarning is not missing value then set end of params to NSURLQueryItem's queryItemWithName:"spoiler_text" value:contentWarning
 	
 	set urlComponents to NSURLComponents's componentsWithString:(APIDOMAIN & "/api/v1/statuses")
-	urlComponents's setQueryItems:{statusParam, visibilityParam}
+	urlComponents's setQueryItems:params
 	
 	--	Send the create post request to the Discourse site
 	set theRequest to NSMutableURLRequest's requestWithURL:(urlComponents's |URL|) ¬
