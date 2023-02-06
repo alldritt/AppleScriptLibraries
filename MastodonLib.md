@@ -85,4 +85,4 @@ end repeat
 
 ### Rate Limiting
 
-Mastodon servers limited may rate limit API calls.  Please be kind to your Mastodon instance.
+Mastodon servers may rate limit API calls.  Please be kind to your Mastodon instance.
