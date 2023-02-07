@@ -1,5 +1,5 @@
 
-# DiscourseLib
+# MastodonLib
 
 MastodonLib is a library that allows you to query [Mastodon](https://joinmastodon.org) timelines and post to a Mastodon account from AppleScript.  This library is far from a complete implementation of the Mastodon API.  
 
