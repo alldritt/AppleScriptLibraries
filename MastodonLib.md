@@ -51,7 +51,7 @@ Mastodon servers return timelines in batches of 20-40 status entries.  You'll ha
 ~~~
 set maxStatusID to missing value
 repeat
-	set statusItems to getHomeTimeline(maxStatusID, missing value, missing value, missing value)
+	set statusItems to MastodonLib's getHomeTimeline(maxStatusID, missing value, missing value, missing value)
 	set statusItemsCount to count of statusItems
 	if statusItemsCount = 0 then
 		exit repeat
@@ -71,7 +71,7 @@ Mastodon servers return timelines in batches of 20-40 status entries.  You'll ha
 set hashtag to "applescript"
 set maxStatusID to missing value
 repeat
-	set statusItems to getHashtagTimeline(hashtag, maxStatusID, missing value, missing value, missing value)
+	set statusItems to MastodonLib's getHashtagTimeline(hashtag, maxStatusID, missing value, missing value, missing value)
 	set statusItemsCount to count of statusItems
 	if statusItemsCount = 0 then
 		exit repeat
