@@ -17,7 +17,7 @@ curl https://raw.githubusercontent.com/alldritt/AppleScriptLibraries/master/Mast
 
 1. Install MastodonLib as described above
 
-2. Create an application for your AppleScript script on your Mastodon instance.  Visit your Mastodon account's web interface and navigate to Preferences and then to Development.  Press the **New Application** button to create an application.  Take note of your application's Client key and Client Secret.  Your completed application will look similar to this:
+2. Create an application for your AppleScript script on your Mastodon instance.  Visit your Mastodon account's web interface and navigate to Preferences and then to Development.  Press the **New Application** button to create an application.  Take note of your application's Client key, Client Secret and Access Token.  Your completed application will look similar to this:
 
   ![Mastodon App Settings](screenshots/MastodonApp.png)
 
@@ -32,6 +32,7 @@ curl https://raw.githubusercontent.com/alldritt/AppleScriptLibraries/master/Mast
 	set MastodonLib's APIDOMAIN to "https://mastodon.example" -- your Mastodon instance's URL
 	set MastodonLib's APICLIENT_KEY to "your mastodon instance app client key"
 	set MastodonLib's APICLIENT_SECRET to "your mastodon instance app client secret"
+	set MastodonLib's APIACCESS_TOKEN to "your mastodon instance app access token"
 	~~~~
 
 ### Post A Status
@@ -52,8 +53,7 @@ Mastodon servers return timelines in batches of 20-40 status entries.  You'll ha
 set maxStatusID to missing value
 repeat
 	set statusItems to MastodonLib's getHomeTimeline(maxStatusID, missing value, missing value, missing value)
-	set statusItemsCount to count of statusItems
-	if statusItemsCount = 0 then
+	if statusItems's |count|() = 0 then
 		exit repeat
 	else
 		set maxStatusID to ((last item of statusItems)'s objectForKey:"id") as text
@@ -72,8 +72,7 @@ set hashtag to "applescript"
 set maxStatusID to missing value
 repeat
 	set statusItems to MastodonLib's getHashtagTimeline(hashtag, maxStatusID, missing value, missing value, missing value)
-	set statusItemsCount to count of statusItems
-	if statusItemsCount = 0 then
+	if statusItems's |count|() = 0 then
 		exit repeat
 	else
 		set maxStatusID to ((last item of statusItems)'s objectForKey:"id") as text
